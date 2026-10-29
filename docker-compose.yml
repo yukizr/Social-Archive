@@ -1,0 +1,18 @@
+services:
+  social-archive:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: social-archive
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./local_archive:/app/local_archive
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+    env_file:
+      - path: .env
+        required: false
+    restart: unless-stopped

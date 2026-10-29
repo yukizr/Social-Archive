@@ -1,0 +1,8 @@
+{
+  "name": "Remix Personal Archive Garden v1",
+  "description": "A free, self-hosted tool to archive your favorite social media posts and media directly to your local device.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
